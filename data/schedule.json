@@ -1,0 +1,97 @@
+{
+    "firstday": {
+        "name": "Keynote Talks & Hackathon Opening",
+        "schedule": [
+            {
+                "time": "13:00 PM",
+                "title": "Keynote 1",
+                "speaker": "Yohan Totting"
+            },
+            {
+                "time": "13:35 PM",
+                "title": "Keynote 2",
+                "speaker": "Riza Fahmi"
+            },
+            {
+                "time": "14:05 PM",
+                "title": "Keynote 3",
+                "speaker": "Jihan A"
+            }
+        ]
+    },
+    "secondday": {
+        "name": "Chrome Hours & Hackathon Mentoring",
+        "schedule": [
+            {
+                "time": "13:00 - 15:00 PM",
+                "title": "Workshop 1",
+                "speaker": "Jefry Dewangga"
+            },
+            {
+                "time": "",
+                "title": "Workshop 2",
+                "speaker": "Atika Azzahra Akbar"
+            },
+            {
+                "time": "",
+                "title": "Workshop 3",
+                "speaker": "Ivan Kristanto"
+            },
+            {
+                "time": "",
+                "title": "Workshop 4",
+                "speaker": "Angela Melinda"
+            },
+            {
+                "time": "15:00 - 16:00 PM",
+                "title": "Mentor 1",
+                "speaker": "Yohan Totting"
+            },
+            {
+                "time": "",
+                "title": "Mentor 2",
+                "speaker": "Riza Fahmi"
+            },
+            {
+                "time": "",
+                "title": "Mentor 3",
+                "speaker": "Hilman Ramadhan"
+            },
+            {
+                "time": "",
+                "title": "Mentor 4",
+                "speaker": "Sandika Galih"
+            },
+            {
+                "time": "",
+                "title": "Mentor 5",
+                "speaker": "Adrianti Rusli"
+            }
+        ]
+    },
+    "thirdday": {
+        "name": "Session Talks & Hackathon Announcement",
+        "schedule": [
+            {
+                "time": "13:00 - 14:00 PM",
+                "title": "Talk",
+                "speaker": "Friska Nataniel"
+            },
+            {
+                "time": "",
+                "title": "Talk",
+                "speaker": "Hilman Ramadhan"
+            },
+            {
+                "time": "",
+                "title": "Talk",
+                "speaker": "Irfan Maulana"
+            },
+            {
+                "time": "14:00 - 14:30 PM",
+                "title": "Announcement",
+                "speaker": "GDG Indonesia"
+            }
+        ]
+    }
+}

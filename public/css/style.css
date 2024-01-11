@@ -1,0 +1,292 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+.small-paragraph {
+    font-size: 16px !important;
+}
+
+footer {
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+iframe {
+    background-color: rgba(75, 75, 75, 0.445);
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.chip-chrome {
+    color: gray;
+}
+
+.navbar {
+    padding: 16px;
+    background-color: white !important;
+}
+
+.rounded-button {
+    border-radius: 40px;
+}
+
+.remove-marginbottom {
+    background-color: #181818;
+    text-align: center;
+    margin-bottom: 0 !important;
+}
+
+.force-white {
+    color: white !important;
+}
+
+.jumbotron.home-overview {
+    width: 100%;
+    height: 70vh;
+    padding: 0;
+    margin-bottom: 0 !important;
+}
+
+.cds-subtitle {
+    color: white;
+    font-size: 0.9375rem;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 0.32px;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.cds-highlight {
+    font-family: 'Domine', serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.cds-message {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.cds-message.schedule {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.child-menu {
+    text-align: right;
+    line-height: 2.5;
+}
+
+.speakers-small {
+    display: inline-block;
+    margin-left: 4px;
+}
+
+.text-logo {
+    font-size: 25px;
+}
+
+.headline-event-tight {
+    font-family: 'Domine', serif;
+    font-weight: 300;
+}
+
+.headline-event {
+    font-family: 'Domine', serif;
+    font-weight: 700;
+}
+
+.card-overview:hover {
+    box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.185);
+}
+
+.card.cds-content {
+    box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.185);
+}
+
+.card-img-top.placeholder {
+    background-color: gray;
+    object-fit: cover;
+}
+
+.btn {
+    position: relative;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #007bff;
+    background-color: transparent;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+    color: rgba(128, 128, 128, 0.589);
+}
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 26px;
+    position: relative;
+    width: 46px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 18px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 18px;
+}
+
+input:checked+.slider {
+    background-color: #dfc21e;
+}
+
+input:checked+.slider:before {
+    transform: translateX(18px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.youtube {
+    background-color: #000;
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.youtube img {
+    width: 100%;
+    top: -16.82%;
+    left: 0;
+    opacity: 0.7;
+}
+
+.youtube .play-button {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 30px rgba( 0, 0, 0, 0.6);
+    z-index: 1;
+    opacity: 0.8;
+    border-radius: 50px;
+}
+
+.youtube .play-button:before {
+    content: "";
+    border-style: solid;
+    border-width: 15px 0 15px 26.0px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.youtube img, .youtube .play-button {
+    cursor: pointer;
+}
+
+.youtube img, .youtube iframe, .youtube .play-button, .youtube .play-button:before {
+    position: absolute;
+}
+
+.youtube .play-button, .youtube .play-button:before {
+    top: 50%;
+    left: 50%;
+    transform: translate3d( -50%, -50%, 0);
+}
+
+.youtube iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width: 992px) {
+    .theme-switch-wrapper {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .text-logo {
+        padding-bottom: 30px;
+    }
+    .child-menu {
+        text-align: left;
+    }
+    footer {
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+    .cds-highlight {
+        font-size: 30px;
+    }
+    .cds-message {
+        font-size: 1rem;
+    }
+    .jumbotron.home-overview {
+        height: 80vh;
+    }
+    .navbar-toggler {
+        border: none;
+        float: left;
+    }
+    .navbar-collapse {
+        position: fixed;
+        top: 80px;
+        /* adjust to height of navbar */
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        width: 75%;
+        height: 100%;
+    }
+    .navbar-collapse.collapsing {
+        left: -75%;
+        transition: height 0s ease;
+    }
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 200ms ease-in-out;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    .navbar-toggler.collapsed~.navbar-collapse {
+        transition: left 300ms ease-in-out;
+    }
+}

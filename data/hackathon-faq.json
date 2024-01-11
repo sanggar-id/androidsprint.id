@@ -1,0 +1,56 @@
+{
+    "faq": [
+        {
+            "question": "What is a Chrome Hackathon?",
+            "answer": "Chrome Hackathon is a mini hackathon that participants can join and challenge themselves to use technology and updates from Chrome Dev Summit 2020 into a project solution where participants can also get a mentoring session and feedback from hackathon mentors."
+        },
+        {
+            "question": "Who can participate?",
+            "answer": "a professional or a student for hackers, coders, and makers."
+        },
+        {
+            "question": "Where will the Hackathon take place?",
+            "answer": "Online (Devpost)"
+        },
+        {
+            "question": "What is in for me?",
+            "answer": "Learning new skills, looks good on your CV, networking, winning cash prizes, working as a team, meet great people, have great food and having fun!"
+        },
+        {
+            "question": "How are the winners selected?",
+            "answer": "There will be an independent Jury selecting the winners with a rating system."
+        },
+        {
+            "question": "Who will be judging?",
+            "answer": "The judge panel composition will be announced closer to the date of the hackathon."
+        },
+        {
+            "question": "How many people should a Team be?",
+            "answer": "5 Persons."
+        },
+        {
+            "question": "What are the costs of participating?",
+            "answer": "Free!"
+        },
+        {
+            "question": "Do we sign up as individuals or as a team?",
+            "answer": "You can register as a team or individuals."
+        },
+        {
+            "question": "Can we use any programming language?",
+            "answer": "Yes."
+        },
+        {
+            "question": "Who is keeping the intellectual property of my solution?",
+            "answer": "The team that develops the project is the owner of the intellectual property and project.. Before the Presentations our technical team will do a quick technical check to make sure that you created your project at the hackathon. You are allowed to use open source libraries, your own libraries etc. to develop your solution!"
+        },
+        {
+            "question": "What is the problem we will be hacking to solve?",
+            "answer": "Details of the business problem will be announced on the day of the event."
+        },
+        {
+            "question": "I have another question that is not answered in your FAQs, what should I do?",
+            "answer": "Contact us in the telegram group. Don’t be shy! We are here to help and create a great atmosphere, drop your question below."
+        }
+    ]
+}

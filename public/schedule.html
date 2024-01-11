@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Rubik&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+
+    <title>Chrome Dev Summit Extended 2020 - Chapter Indonesia</title>
+</head>
+
+<body class="mt-5 bg-white">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://developer.chrome.com/devsummit/assets/site-logo-5b1107ca.png" width="40">
+                Dev Summit Extended
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse bg-white" id="navbarNavAltMarkup">
+                <div class="navbar-nav d-none d-md-block">
+                    <a target="_blank" class="nav-item btn btn-primary rounded-button" href="https://google.com/"><i
+                            class="fa fa-share-square"></i> Register Now</a>
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link text-secondary" href="index.html">Home</a>
+                    <a class="nav-item nav-link active" href="schedule.html">Schedule <span
+                            class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link text-secondary" href="speakers.html">Speakers</a>
+                </div>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="darkSwitch">
+                        <input type="checkbox" id="darkSwitch" />
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="schedule" class="pt-4">
+        <div class="jumbotron jumbotron-fluid bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 align-self-center">
+                        <h2 class="text-secondary">Schedule</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content" class="pb-5">
+        <div id="speakers">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-first-tab" data-toggle="pill" href="#pills-first"
+                                    role="tab" aria-controls="pills-first" aria-selected="true">15 Jan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-second-tab" data-toggle="pill" href="#pills-second"
+                                    role="tab" aria-controls="pills-second" aria-selected="false">23 Jan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-third-tab" data-toggle="pill" href="#pills-third"
+                                    role="tab" aria-controls="pills-third" aria-selected="false">30 Jan</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <div class="tab-content" id="pills-tabContent">
+                            <!-- 15 Jan -->
+                            <div class="tab-pane fade show active" id="pills-first" role="tabpanel"
+                                aria-labelledby="pills-first-tab">
+
+                                <h5>{{ firstday.name }}</h5><br>
+
+                                <hr class="my-4 pb-2">
+
+                                <div v-for="speaker in firstday.schedule">
+                                    <div class="row pb-2">
+                                        <div class="col-md align-self-center">
+                                            <h6 class="text-muted">{{ speaker.time }}</h6>
+                                        </div>
+                                        <div class="col-md-11">
+                                            <div class="card schedule">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">{{ speaker.title }}</h5>
+                                                    <img src="http://placehold.it/40x40" class="rounded-circle">
+                                                    <h6 class="card-subtitle mb-2 text-muted speakers-small">{{
+                                                        speaker.speaker }}</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="my-4 pb-2">
+                                </div>
+                            </div>
+
+                            <!-- 23 Jan -->
+                            <div class="tab-pane fade" id="pills-second" role="tabpanel"
+                                aria-labelledby="pills-second-tab">
+
+                                <h5>{{ secondday.name }}</h5><br>
+
+                                <div v-for="speaker in secondday.schedule">
+                                    <hr class="my-4 pb-2" v-if="speaker.time !== ''">
+                                    <div class="row pb-2">
+                                        <div class="col-md align-self-center">
+                                            <h6 class="text-muted">{{ speaker.time }}</h6>
+                                        </div>
+                                        <div class="col-md-11">
+                                            <div class="card schedule">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">{{ speaker.title }}</h5>
+                                                    <img src="http://placehold.it/40x40" class="rounded-circle">
+                                                    <h6 class="card-subtitle mb-2 text-muted speakers-small">{{
+                                                        speaker.speaker }}</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4 pb-2">
+
+                            </div>
+
+                            <!-- 30 Jan -->
+                            <div class="tab-pane fade" id="pills-third" role="tabpanel"
+                                aria-labelledby="pills-third-tab">
+
+                                <h5>{{ thirdday.name }}</h5><br>
+
+                                <div v-for="speaker in thirdday.schedule">
+                                    <hr class="my-4 pb-2" v-if="speaker.time !== ''">
+                                    <div class="row pb-2">
+                                        <div class="col-md align-self-center">
+                                            <h6 class="text-muted">{{ speaker.time }}</h6>
+                                        </div>
+                                        <div class="col-md-11">
+                                            <div class="card schedule">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">{{ speaker.title }}</h5>
+                                                    <img src="http://placehold.it/40x40" class="rounded-circle">
+                                                    <h6 class="card-subtitle mb-2 text-muted speakers-small">{{
+                                                        speaker.speaker }}</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4 pb-2">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-lg-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 align-self-center text-logo text-dark">
+                    <img src="https://devfestindonesia.com/_nuxt/img/logo.444364e.png" alt="GDG Indonesia" width="80px">
+                </div>
+
+                <div class="child-menu col-md-2 ml-auto">
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="schedule.html" class="text-secondary">Schedule</a></li>
+                        <li><a href="speakers.html" class="text-secondary">Speakers</a></li>
+                        <li><a href="hackathon.html" class="text-secondary">Hackathon</a></li>
+                        <li><a href="organizers.html" class="text-secondary">Organizers</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="my-5">
+
+            <div class="row">
+                <div class="col-md">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="text-secondary"
+                                href="https://developers.google.com/community/gdg">About
+                                GDG Program</a></li>
+                        <li class="list-inline-item"><a class="text-secondary"
+                                href="https://developers.google.com/community/gdg/organizers#community-guidelines">Code
+                                of Conduct</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://coliff.github.io/dark-mode-switch/dark-mode-switch.min.js"></script>
+
+    <script>
+        new Vue({
+            data: {
+                firstday: '',
+                secondday: '',
+                thirdday: '',
+            },
+            el: '#speakers',
+            methods: {
+                fetch: function () {
+                    axios.get(`https://raw.githubusercontent.com/gdgindonesia/cds-extended-id/main/data/schedule.json`)
+                        .then(response => {
+                            this.firstday = response.data.firstday;
+                            this.secondday = response.data.secondday;
+                            this.thirdday = response.data.thirdday;
+                        })
+                }
+            },
+            beforeMount() {
+                this.fetch()
+            },
+        })
+    </script>
+</body>
+
+</html>

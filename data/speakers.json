@@ -1,0 +1,32 @@
+{
+    "speakers": [
+        {
+            "name": "Yohan Totting",
+            "title": "Web Developer",
+            "linkedin": "https://id.linkedin.com/in/tyohan",
+            "twitter": "https://twitter.com/tyohan",
+            "avatar": "https://avatars3.githubusercontent.com/u/106703?s=460&u=5e6a07c895ce106b8d8e8951759134612c5f1808&v=4"
+        },
+        {
+            "name": "Riza Fahmi",
+            "title": "Co-Founder, Hacktiv8",
+            "linkedin": "https://id.linkedin.com/in/rizafahmi",
+            "twitter": "https://twitter.com/rizafahmi22",
+            "avatar": "https://avatars2.githubusercontent.com/u/1147918?s=460&u=5efa9629fc1a6cd252677b105765d571b20ea732&v=4"
+        },
+        {
+            "name": "Friska Nataniel",
+            "title": "Associate Research and Development, Blibli",
+            "linkedin": "https://id.linkedin.com/in/friskanataniel/",
+            "twitter": "",
+            "avatar": "https://i.ibb.co/wL5p8LB/Whats-App-Image-2021-01-06-at-6-41-51-PM.jpg"
+        },
+        {
+            "name": "Irfan Maulana",
+            "title": "Principal Engineer, Tokopedia",
+            "linkedin": "https://id.linkedin.com/in/mazipan/",
+            "twitter": "https://twitter.com/Maz_Ipan",
+            "avatar": "https://i.ibb.co/PFc8fJN/2019-08-mazipan.jpg"
+        }
+    ]
+}
