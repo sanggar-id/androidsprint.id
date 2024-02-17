@@ -1,6 +1,10 @@
 * {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     box-sizing: border-box;
+}
+
+p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .small-paragraph {
@@ -59,7 +63,6 @@ iframe {
 }
 
 .cds-highlight {
-    font-family: 'Domine', serif;
     font-weight: 700;
     font-size: 40px;
 }
@@ -91,12 +94,10 @@ iframe {
 }
 
 .headline-event-tight {
-    font-family: 'Domine', serif;
     font-weight: 300;
 }
 
 .headline-event {
-    font-family: 'Domine', serif;
     font-weight: 700;
 }
 
@@ -267,7 +268,7 @@ input:checked+.slider:before {
     }
     .navbar-collapse {
         position: fixed;
-        top: 80px;
+        top: 0px;
         /* adjust to height of navbar */
         left: 0;
         padding-left: 15px;
